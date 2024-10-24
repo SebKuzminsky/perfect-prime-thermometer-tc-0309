@@ -4,7 +4,7 @@ import time
 class tc0309:
     def __init__(self, port):
         self.serial = serial.Serial(
-            port='/dev/ttyUSB0',
+            port=port,
             baudrate=9600,
             bytesize=8,
             parity='N',
@@ -54,7 +54,6 @@ class tc0309:
             result['T4'] = t4/10
 
         return result
-
 
     def get_record(self):
         self.serial.write(b'A')

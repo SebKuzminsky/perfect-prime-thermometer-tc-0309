@@ -2,7 +2,7 @@ Python interface to PerfectPrime Thermometer TC0309 over serial.
 
 Use as a command-line utility:
 ```
-$ python3 -m tc0309
+$ python3 -u -m tc0309
 {'low battery': False, 'units': 'C', 'T1': 21.3}
 {'low battery': False, 'units': 'C', 'T1': 21.3}
 {'low battery': False, 'units': 'C', 'T1': 21.3}
